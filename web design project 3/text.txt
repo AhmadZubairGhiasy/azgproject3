@@ -1,0 +1,8 @@
+ <p>i am a professional frontend web developer 
+                    with over 2 year of experiance. Chick out 
+                    my info section to be sure about my education 
+                    and experiance background. if you want to see 
+                    my project, just click on gallary to see my project photos.
+                    if you want to contact with us please Chick out contact section
+                    we added all contact information in it. if you want to know about
+                     my service chick out service section.    </p>

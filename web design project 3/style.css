@@ -1,0 +1,412 @@
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --firstbg-color:rgba(0, 0, 36, 0.952);
+    --secondbg-color:rgb(1, 1, 82);
+    --thirdbg-color:rgb(0, 0, 36);
+    --partsbg-color:rgba(0, 0, 36, 0.877);
+    --webpage-gradiant:radial-gradient(rgb(1, 1, 82), rgb(0, 0, 36));
+    --text-color: rgb(0, 119, 255) ;
+    --text-color2: rgb(255, 136, 0);
+}
+
+
+body{
+    background-color: var(--firstbg-color);
+    font-size: 16px;
+    color: white;
+}
+
+/* hero section codes*/
+
+
+#hero{
+    background-image: var(--webpage-gradiant);
+    width: 100%;
+   
+    box-shadow: 1px 1px 10px rgb(0, 0, 0);
+}
+
+.navstyle{
+    width: 100%;
+    position: fixed;
+    display: flex;
+    justify-content: right;
+    z-index: 20;
+
+    
+}
+#hero nav a{
+    padding: 8px;
+    padding-bottom: 3px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 2cm;
+    height: 1cm;
+    color: white;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-decoration: none;
+    text-transform: capitalize;
+    position: relative;
+    right: 10%;
+}
+
+#hero nav a:hover{
+    
+    border-bottom: 2px solid var(--text-color);
+    
+}
+
+#navbtn{
+    height: 1cm;
+    padding: 8px;
+    margin: 10px;
+    position: fixed;
+    fill: white;
+    right: 5%;
+    top: 10px;
+    z-index: 21;
+    display: none;
+}
+
+#navbtn:focus + #mainnav{
+    display: none;
+}
+
+
+
+
+.contain{
+  
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+}
+
+
+.headleft{
+    
+    display: flex;
+    flex-direction: column;
+    height: 720px;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+
+.create{
+    font-size: 33px;
+    letter-spacing: 22px;
+}
+
+.responsive{
+    font-size: 76px;
+    font-family: arial;
+    color: var(--text-color);
+    
+}
+
+.webpage{
+    font-family: sans-serif;
+    font-size: 99px;
+    color: transparent;
+    -webkit-text-stroke: 5px var(--text-color2);
+}
+
+
+.logowordcontainer{
+    display: grid;
+    grid-template-columns: 10% 90%;
+}
+
+.with{
+    display: inline;
+    font-size: 58px;
+    margin-left: 2cm;
+    z-index: 2;
+   
+}
+.h1aslogo{
+    display: inline;
+    font-size: 157px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;
+    left: 2cm;
+    color: var(--text-color);
+    -webkit-text-stroke: 5px var(--text-color);
+    z-index: 1;
+    
+}
+
+
+.headright{
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+
+
+
+/* info section codes */
+
+#info,#service,#gallary{
+    padding: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionhead{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    position : relative ;
+    background-color: var(--partsbg-color);
+    width : 100%;
+    height : 150px;
+    border-radius : 34px;
+    padding: 4%;
+    
+    
+}
+
+.infocontainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: white;
+    position : relative ;
+    background-color: var(--partsbg-color);
+    width : 400px;
+    height : 150px;
+    border-radius : 34px;
+    margin: 5%;
+}
+
+.infocontainer h2{
+    margin: 2%;
+    font-size: 18px;
+}
+
+
+/* gallary section codes*/
+
+.projectcontainer{
+    color: white;
+    background-color: var(--partsbg-color);
+    height: 400px;
+    width : 400px;
+    margin: 5%;
+    border-radius : 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position : relative ;
+}
+
+.projectcontainer:hover{
+    box-shadow: 2px 1px 5px rgba(255, 255, 255, 0.774);
+}
+
+.imgcontainer{
+    width: 350px;
+    height: 300px;
+    border-radius: 34px;
+    overflow: hidden;
+    opacity: 70%;
+}
+
+.imgcontainer img{
+
+    height: 100%;
+    transition: 3s;
+}
+
+.imgcontainer img:hover{
+    scale: 110%;
+    opacity: 100%;
+}
+
+.projectpg{
+    margin: 3%;
+}
+
+
+/* contact section codes*/
+
+#contact{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20% 0%;
+}
+
+.contactcontainer{
+    height : 150px;
+    width: 450px;
+    margin: 2%;
+    border-radius : 34px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position : relative ;
+    color: white;
+    background-color: var(--partsbg-color);
+}
+
+.iconcontainer{
+    margin: 2%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.iconcontainer svg{
+    margin: 10%;
+    fill: rgb(243, 140, 6);
+    width: 40px;
+}
+
+
+
+/* javascript added classes*/
+
+.headercoloring{
+    background-color: var(--thirdbg-color);
+    transition: 1s;
+}
+
+
+.headershowing{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 460px;
+    background-color: var(--partsbg-color);
+    z-index: 21;
+}
+
+
+
+
+
+@media screen and (max-width: 950px) {
+    
+
+    .contain{
+  
+     
+        grid-template-columns: 60% 40%;
+        
+    }
+
+    .sectionhead{
+        
+        padding: 4%;
+        
+    }
+}
+
+
+@media screen and (max-width: 760px) {
+
+    body{
+        overflow-x: hidden;
+    }
+    
+
+    #navbtn{
+        display: block;
+    }
+
+    .navstyle{
+     
+        display: none;
+     
+    }
+
+    .contain{
+        grid-template-columns: 90% 10%;
+    }
+    .headright{
+        display: none;
+    }
+
+
+    .infocontainer{
+        width: 90%;
+    }
+
+    .projectcontainer{
+        width: 90%;
+    }
+    .imgcontainer{
+        width: 90%;
+    }
+    .contactcontainer{
+        width: 90%;
+    }
+}
+
+
+@media screen and (max-width:600px) {
+    
+    .headleft *{
+        scale: 80%;
+    }
+    .create{
+        letter-spacing: 18px;
+    }
+
+    .contactcontainer{
+        scale: 85%;
+    }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .headleft *{
+        scale: 70%;
+    }
+    .create{
+        letter-spacing: 14px;
+    }
+    .sectionhead{
+        font-size: 10px;
+    }
+    .infocontainer {
+        font-size: 14px;
+    }
+    .infocontainer h2{
+       font-size: 14px;
+    }
+}   
+
+
